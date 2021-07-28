@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { InfoComponent } from './info/info.component';
 import { CvComponent } from './cv/cv.component';
 import { RoutePlannerComponent } from './route-planner/route-planner.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RoutePlannerComponent } from './route-planner/route-planner.component';
     NavigationComponent,
     InfoComponent,
     CvComponent,
-    RoutePlannerComponent
+    RoutePlannerComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

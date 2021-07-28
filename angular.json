@@ -27,7 +27,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/script.js"
+              "src/assets/js/route-planner.js"
             ]
           },
           "configurations": {

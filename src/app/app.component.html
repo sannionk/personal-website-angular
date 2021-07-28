@@ -1,7 +1,11 @@
-<div class="container-fluid">
-  <div class="row header">
-    <h1>{{name}}</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <app-navigation></app-navigation>
+    </div>
+    <div class="col-md-9">
+      <router-outlet></router-outlet>
+    </div>
   </div>
-  <app-navigation></app-navigation>
-  <router-outlet></router-outlet>
 </div>
+   
