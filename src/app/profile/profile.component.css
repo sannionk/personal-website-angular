@@ -1,20 +1,24 @@
+
 .skills {
     list-style: none;
     padding-left: 0;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
 }
 .skill {
-    width: 10rem;
-    border: 0.5px solid lightgray;
+    flex: 1 1 10rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-content: center;
+}
+.skills li {
+    color: var(--dark);
 }
 .skill span,
 .skill ::before {
+    text-align: center;
     flex: 0 0 100%;
 }
 
@@ -25,7 +29,6 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     font-family: "Font Awesome 5 Brands";
-    font-weight: 900;
     font-size: 3em;
 }
 .html::before {
@@ -43,7 +46,7 @@
     background-size: 1em 1em;
     width: 1em;
     height: 1em;
-    color: black;
+    color: var(--dark);
 }
 .angular::before {
     content: "\f420";
@@ -60,6 +63,7 @@
 .sql::before {
     content: "\f1c0";
     font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 }
 .docker::before {
     content: "\f395";

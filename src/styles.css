@@ -27,6 +27,9 @@ body {
     line-height: 1.4;
     margin: 0;
 }
+.main {
+    position: relative;
+}
 p,li {
     font-family: 'Montserrat', sans-serif;
 }
@@ -36,15 +39,10 @@ h1,h2,h3,h4,h5 {
 h2 {
     font-size: 3rem;
 }
-.header {
-    height: 200px;
-    align-items: center;
-}
 
-footer {
-    background-color: rgb(24, 25, 26);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    padding: 20px;
+.content-card {
+    padding: var(--card-padding);
+    background-color: var(--light);
+    color: var(--dark);
+    box-shadow: 0px 6px 20px 1px var(--shadow-dark);
 }
