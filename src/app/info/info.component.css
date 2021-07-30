@@ -1,10 +1,7 @@
-.profile-wrapper {
-    /* border: 0.5px solid ; */
+.content-card {
     display: grid;
     grid-template-columns: 30% 70%;
-    background-color: var(--light);
-    color: var(--dark);
-    box-shadow: 0px 6px 20px 1px var(--shadow-dark);
+    padding: 0;
 }
 .picture {
     width: 100%;
@@ -21,4 +18,21 @@ img {
 }
 .info {
     padding: var(--card-padding);
+}
+.info .fa-wrench {
+    font-size: 1.5rem;
+    margin-inline-end: 0.5rem;
+    transform: rotate(180deg);
+    animation: rotation 5s linear 1s infinite;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

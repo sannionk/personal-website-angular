@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoComponent implements OnInit {
 
-  info = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+  info = 'This site is under construction.';
   constructor() { }
 
   ngOnInit(): void {
