@@ -10,6 +10,8 @@ import { InfoComponent } from './info/info.component';
 import { CvComponent } from './cv/cv.component';
 import { RoutePlannerComponent } from './route-planner/route-planner.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ProfileComponent } from './profile/profile.component';
     InfoComponent,
     CvComponent,
     RoutePlannerComponent,
-    ProfileComponent
+    ProfileComponent,
+    ProjectsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

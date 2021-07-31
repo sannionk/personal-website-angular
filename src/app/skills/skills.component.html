@@ -1,0 +1,12 @@
+<h2>Skills</h2>
+<ul class="card-grid skills">
+    <li *ngFor="let skill of skills"
+        class="content-card hoverable skill {{skill}}"
+        (click)="expandCard(skill)"
+        [class.expanded]="skill == expandedSkill">
+        <span>{{skill}}</span>
+        <div class="more" *ngIf="skill == expandedSkill">
+            lol
+        </div>
+    </li>
+</ul>

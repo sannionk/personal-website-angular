@@ -1,0 +1,66 @@
+.skill {
+    flex: 1 1 10rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+.skills li {
+    color: var(--dark);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+.skill span,
+.skill ::before {
+    text-align: center;
+    flex: 0 0 100%;
+}
+
+.skill::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Brands";
+    font-size: 3em;
+}
+.html::before {
+    content: "\f13b";
+}
+.css::before {
+    content: "\f38b";
+}
+.javascript::before {
+    content: "\f3b9";
+}
+.typescript::before {
+    content: "";
+    background-image: url(src/assets/img/typescript.svg);
+    background-size: 1em 1em;
+    width: 1em;
+    height: 1em;
+    color: var(--dark);
+}
+.angular::before {
+    content: "\f420";
+}
+.python::before {
+    content: "\f3e2";
+}
+.java::before {
+    content: "\f4e4";
+}
+.php::before {
+    content: "\f457";
+}
+.sql::before {
+    content: "\f1c0";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.docker::before {
+    content: "\f395";
+}
+.git::before {
+    content: "\f1d3";
+}

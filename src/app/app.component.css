@@ -13,9 +13,3 @@
     top: 0;
     z-index: -1;
 }
-
-@media (min-width: 768px){
-    .page {
-        padding-top: 10rem;
-    }
-} 

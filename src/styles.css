@@ -10,7 +10,10 @@
     --grey: #dbdbdb;
     --shadow-medium: #6b5f5a;
     --shadow-dark: #3d3d3d7c;
-
+    
+    /* fonts */
+    --heading-font: 'DM Serif Display', serif;
+    --body-font: 'Montserrat', sans-serif;
 }
 *,
 *::before,
@@ -31,10 +34,10 @@ body {
     position: relative;
 }
 p,li {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--body-font);
 }
 h1,h2,h3,h4,h5 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--heading-font);
 }
 h2 {
     font-size: 3rem;
@@ -42,7 +45,41 @@ h2 {
 
 .content-card {
     padding: var(--card-padding);
-    background-color: var(--light);
+    background-color: var(--grey);
     color: var(--dark);
     box-shadow: 0px 6px 20px 1px var(--shadow-dark);
+}
+.content-card.expanded {
+    transform: scale(2);
+}
+.content-card.expanded:hover {
+    transform: scale(2);
+}
+.card-grid {
+    --gap: 1rem;
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - (calc(var(--gap) * 0.5))));
+    gap: var(--gap);
+}
+
+.hoverable:hover {
+    box-shadow: 8px 8px 18px 3px #0000007a;
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px){
+    .page {
+        padding-top: 10rem;
+    }
+    .card-grid {
+        grid-template-columns: repeat(4, calc(25% - (calc(var(--gap) * 0.75))));
+    }
+}
+
+@media (min-width: 992px) {
+    .card-grid {
+        grid-template-columns: repeat(5, calc(20% - (calc(var(--gap) * 0.8))));
+    }
 }
